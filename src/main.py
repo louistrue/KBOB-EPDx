@@ -10,34 +10,34 @@ from epdx.pydantic import EPD, Standard, SubType, Unit, Source
 class EPDx(EPD):
 
     @classmethod
-    def from_dict(cls, table7_object: dict):
-        """Convert a row from the table 7 csv to an EPDx object"""
+    def from_dict(cls, KBOBeco_object: dict):
+        """Convert a row from the KBOB eco data csv to an EPDx object"""
 
-        declared_factor = float(table7_object.get("Deklareret faktor (FU)"))
-        declared_unit = table7_object.get("Deklareret enhed (FU)")
-        table7_id = table7_object.get("Sorterings ID")
+        declared_factor = float(KBOBeco_object.get("Bezug"))
+        declared_unit = 1
+        KBOBeco_id = KBOBeco_object.get("UUID-Nummer")
 
         epd = cls(
-            id=cls.convert_lcabyg_id(table7_id),
+            id=cls.convert_lcabyg_id(KBOBeco_id),
             format_version=importlib.metadata.version("epdx"),
-            name=table7_object.get("Navn DK"),
-            version="version 2 - 201222",
+            name=KBOBeco_object.get("BAUMATERIALIEN"),
+            version="version 4 - 2024",
             declared_unit=cls.convert_unit(declared_unit),
             valid_until=datetime(year=2025, month=12, day=22),
-            published_date=datetime(year=2020, month=12, day=22),
-            source=Source(name="BR18 - Tabel 7", url=table7_object.get("Url (link)")),
+            published_date=datetime(year=2024, month=11, day=25),
+            source="KBOB",
             standard=Standard.EN15804A1,
-            subtype=cls.convert_subtype(table7_object.get("Data type")),
-            comment=table7_id,
+            subtype=cls.convert_subtype(KBOBeco_object.get("Data type")),
+            comment=KBOBeco_id,
             reference_service_life=None,
-            location="DK",
+            location="CH",
             conversions=[
                 {"to": Unit.KG,
-                 "value": float(table7_object.get("Masse faktor")) * declared_factor}
+                 "value": float(KBOBeco_object.get("Masse")) * declared_factor}
             ],
             gwp={
                 "a1a3": cls.convert_gwp(
-                    table7_object.get("Global Opvarmning, modul A1-A3"),
+                    KBOBeco_object.get("Treibhausgasemissionen (kg CO2-eq)"),
                     declared_factor
                 ),
                 "a4": None,
@@ -51,9 +51,9 @@ class EPDx(EPD):
                 "b7": None,
                 "c1": None,
                 "c2": None,
-                "c3": cls.convert_gwp(table7_object.get("Global Opvarmning, modul C3"), declared_factor),
-                "c4": cls.convert_gwp(table7_object.get("Global Opvarmning, modul C4"), declared_factor),
-                "d": cls.convert_gwp(table7_object.get("Global Opvarmning, modul D"), declared_factor),
+                "c3": cls.convert_gwp(KBOBeco_object.get("Global Opvarmning, modul C3"), declared_factor),
+                "c4": cls.convert_gwp(KBOBeco_object.get("Global Opvarmning, modul C4"), declared_factor),
+                "d": cls.convert_gwp(KBOBeco_object.get("Global Opvarmning, modul D"), declared_factor),
             },
         )
         return epd
