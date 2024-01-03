@@ -7,7 +7,6 @@ from pathlib import Path
 import importlib.metadata
 from epdx.pydantic import EPD, Standard, SubType, Unit, Source
 
-
 class EPDx(EPD):
 
     @classmethod
@@ -61,7 +60,7 @@ class EPDx(EPD):
 
     @staticmethod
     def convert_lcabyg_id(bpst_id: str) -> str:
-        _map = json.loads(Path("lcabyg_tabel7_map.json").read_text())
+        _map = json.loads(Path("C:\\Users\\LouisTrümpler\\Documents\\GitHub\\KBOB_EPDx\\src\\lcabyg_tabel7_map.json").read_text())
         return _map.get(bpst_id, str(uuid.uuid4()))
 
     @staticmethod
@@ -114,6 +113,6 @@ def parse_row(row: dict, out_path: Path):
 
 
 if __name__ == "__main__":
-    p = Path("tabel7.csv")
+    p = Path("C:\\Users\\LouisTrümpler\\Documents\\GitHub\\KBOB_EPDx\\src\\tabel7.csv")
     out = Path(__file__).parent.parent / "table7"
     main(p, out)
