@@ -113,6 +113,6 @@ def parse_row(row: dict, out_path: Path):
 
 
 if __name__ == "__main__":
-    p = Path("C:\\Users\\LouisTrümpler\\Documents\\GitHub\\KBOB_EPDx\\src\\tabel7.csv")
-    out = Path(__file__).parent.parent / "table7"
+    p = Path("C:\\Users\\LouisTrümpler\\Documents\\GitHub\\KBOB_EPDx\\src\\KBOB.csv")
+    out = Path(__file__).parent.parent / "KBOB"
     main(p, out)
