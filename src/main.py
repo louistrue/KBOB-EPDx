@@ -13,28 +13,24 @@ class EPDx(EPD):
     def from_dict(cls, KBOBeco_object: dict):
         """Convert a row from the KBOB eco data csv to an EPDx object"""
 
-        declared_factor = float(KBOBeco_object.get("Bezug"))
-        declared_unit = 1
-        KBOBeco_id = KBOBeco_object.get("UUID-Nummer")
+        declared_factor = 1
+        declared_unit = KBOBeco_object.get("Bezug")
+
 
         epd = cls(
-            id=cls.convert_lcabyg_id(KBOBeco_id),
+            id=KBOBeco_object.get("UUID-Nummer") or str(uuid.uuid4()),
             format_version=importlib.metadata.version("epdx"),
             name=KBOBeco_object.get("BAUMATERIALIEN"),
             version="version 4 - 2024",
             declared_unit=cls.convert_unit(declared_unit),
             valid_until=datetime(year=2025, month=12, day=22),
             published_date=datetime(year=2024, month=11, day=25),
-            source="KBOB",
+            source=Source(name="KBOB", uuid=KBOBeco_object.get("UUID-Nummer")),
             standard=Standard.EN15804A1,
-            subtype=cls.convert_subtype(KBOBeco_object.get("Data type")),
-            comment=KBOBeco_id,
+            subtype="Generic",
             reference_service_life=None,
             location="CH",
-            conversions=[
-                {"to": Unit.KG,
-                 "value": float(KBOBeco_object.get("Masse")) * declared_factor}
-            ],
+
             gwp={
                 "a1a3": cls.convert_gwp(
                     KBOBeco_object.get("Treibhausgasemissionen (kg CO2-eq)"),
@@ -51,17 +47,13 @@ class EPDx(EPD):
                 "b7": None,
                 "c1": None,
                 "c2": None,
-                "c3": cls.convert_gwp(KBOBeco_object.get("Global Opvarmning, modul C3"), declared_factor),
-                "c4": cls.convert_gwp(KBOBeco_object.get("Global Opvarmning, modul C4"), declared_factor),
-                "d": cls.convert_gwp(KBOBeco_object.get("Global Opvarmning, modul D"), declared_factor),
+                "c3": None,
+                "c4": None,
+                "d":  None,
             },
         )
         return epd
 
-    @staticmethod
-    def convert_lcabyg_id(bpst_id: str) -> str:
-        _map = json.loads(Path("C:\\Users\\LouisTrümpler\\Documents\\GitHub\\KBOB_EPDx\\src\\lcabyg_tabel7_map.json").read_text())
-        return _map.get(bpst_id, str(uuid.uuid4()))
 
     @staticmethod
     def convert_unit(unit: str) -> Unit:
@@ -81,20 +73,11 @@ class EPDx(EPD):
             case _:
                 return Unit.UNKNOWN
 
-    @staticmethod
-    def convert_subtype(subtype: str) -> SubType:
-        _map = {
-            "Generisk data": SubType.Generic,
-            "Branche data": SubType.Industry,
-        }
-        return _map.get(subtype)
 
     @staticmethod
     def convert_gwp(gwp: str, declared_factor: float) -> float | None:
-        if gwp == "-":
-            return None
-        else:
-            return float(gwp) / declared_factor
+        return None if gwp in ["-", ""] else float(gwp) / declared_factor
+
 
 
 def main(path: Path, out_path: Path):
@@ -105,10 +88,7 @@ def main(path: Path, out_path: Path):
 
 
 def parse_row(row: dict, out_path: Path):
-    if row.get("Sorterings ID").startswith("#S"):
-        return
     epd = EPDx.from_dict(row)
-
     (out_path / f"{epd.id}.json").write_text(epd.json(ensure_ascii=False, indent=2))
 
 
