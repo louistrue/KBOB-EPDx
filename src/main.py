@@ -26,11 +26,13 @@ class EPDx(EPD):
             valid_until=datetime(year=2025, month=12, day=22),
             published_date=datetime(year=2024, month=11, day=25),
             source=Source(name="KBOB", uuid=KBOBeco_object.get("UUID-Nummer")),
-            standard=Standard.EN15804A1,
+            standard=Standard.EN15804A2,
             subtype="Generic",
             reference_service_life=None,
             location="CH",
-
+#            penre=KBOBeco_object.get("Primärenergie nicht erneuerbar (kWh oil-eq)"),
+#            pere=KBOBeco_object.get("Primärenergie erneuerbar (kWh oil-eq)"),
+#            pert=KBOBeco_object.get("Primärenergie"),
             gwp={
                 "a1a3": cls.convert_gwp(
                     KBOBeco_object.get("Treibhausgasemissionen (kg CO2-eq)"),
@@ -60,15 +62,15 @@ class EPDx(EPD):
         match unit:
             case "STK":
                 return Unit.PCS
-            case "M":
+            case "m":
                 return Unit.M
-            case "M2":
+            case "m2":
                 return Unit.M2
-            case "M3":
+            case "m3":
                 return Unit.M3
-            case "KG":
+            case "kg":
                 return Unit.KG
-            case "L":
+            case "l":
                 return Unit.L
             case _:
                 return Unit.UNKNOWN
@@ -77,8 +79,7 @@ class EPDx(EPD):
     @staticmethod
     def convert_gwp(gwp: str, declared_factor: float) -> float | None:
         return None if gwp in ["-", ""] else float(gwp) / declared_factor
-
-
+    
 
 def main(path: Path, out_path: Path):
     reader = csv.DictReader(io.StringIO(path.read_text()))
