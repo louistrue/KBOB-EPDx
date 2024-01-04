@@ -1,6 +1,4 @@
-﻿UUID-Nummer,BAUMATERIALIEN,Masse,Bezug,UBP,Primärenergie,Primärenergie erneuerbar (kWh oil-eq),Primärenergie nicht erneuerbar (kWh oil-eq),Treibhausgasemissionen (kg CO2-eq),"Biogener Kohlenstoff
-Carbone biogène (kg C)","MATÉRIAUX DE CONSTRUCTON
-"
+﻿UUID-Nummer,BAUMATERIALIEN,Masse,Bezug,UBP,Primärenergie,Primärenergie erneuerbar (kWh oil-eq),Primärenergie nicht erneuerbar (kWh oil-eq),Treibhausgasemissionen (kg CO2-eq),Biogener Kohlenstoff,MATERIAUX
 1C0034A0-2E93-4622-AB2F-B6C7BDC0A9A4,"Baugrubensicherung, Bohrpfahlwand, gespriesst",-,m2,1’300’000,2250,129,2120,861,0,"Blindage de fouille, paroi parisienne, étayé"
 EE35298F-D4F1-4FBF-8F21-914AC601204F,"Baugrubensicherung, Bohrpfahlwand, unverankert",-,m2,1’230’000,2050,114,1940,821,0,"Blindage de fouille, paroi parisienne, flottant"
 E6266550-4DA7-4AC1-9967-35D378CCA917,"Baugrubensicherung, Bohrpfahlwand, verankert",-,m2,846’000,1490,103,1390,535,0,"Blindage de fouille, paroi parisienne, fixe"

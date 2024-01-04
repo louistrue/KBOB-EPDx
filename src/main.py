@@ -15,24 +15,83 @@ class EPDx(EPD):
 
         declared_factor = 1
         declared_unit = KBOBeco_object.get("Bezug")
-
+        french_name = KBOBeco_object.get("MATERIAUX")
+        biogen_c = KBOBeco_object.get("Biogener Kohlenstoff")
 
         epd = cls(
             id=KBOBeco_object.get("UUID-Nummer") or str(uuid.uuid4()),
             format_version=importlib.metadata.version("epdx"),
             name=KBOBeco_object.get("BAUMATERIALIEN"),
-            version="version 4 - 2024",
+                        version="version 4 - 2024",
             declared_unit=cls.convert_unit(declared_unit),
             valid_until=datetime(year=2025, month=12, day=22),
             published_date=datetime(year=2024, month=11, day=25),
-            source=Source(name="KBOB", uuid=KBOBeco_object.get("UUID-Nummer")),
+            source=Source(name="KBOB", url="https://www.kbob.admin.ch/kbob/de/home/themen-leistungen/nachhaltiges-bauen/oekobilanzdaten_baubereich.html"),
             standard=Standard.EN15804A2,
             subtype="Generic",
-            reference_service_life=None,
+            comment=str(french_name),
+            reference_service_life=60,
             location="CH",
-#            penre=KBOBeco_object.get("Primärenergie nicht erneuerbar (kWh oil-eq)"),
-#            pere=KBOBeco_object.get("Primärenergie erneuerbar (kWh oil-eq)"),
-#            pert=KBOBeco_object.get("Primärenergie"),
+            penre={
+                "a1a3": cls.convert_penre(
+                    KBOBeco_object.get("Primärenergie nicht erneuerbar (kWh oil-eq)"),
+                    declared_factor
+                ),
+                "a4": None,
+                "a5": None,
+                "b1": None,
+                "b2": None,
+                "b3": None,
+                "b4": None,
+                "b5": None,
+                "b6": None,
+                "b7": None,
+                "c1": None,
+                "c2": None,
+                "c3": None,
+                "c4": None,
+                "d":  None,
+            },
+            pere={
+                "a1a3": cls.convert_pere(
+                    KBOBeco_object.get("Primärenergie erneuerbar (kWh oil-eq)"),
+                    declared_factor
+                ),
+                "a4": None,
+                "a5": None,
+                "b1": None,
+                "b2": None,
+                "b3": None,
+                "b4": None,
+                "b5": None,
+                "b6": None,
+                "b7": None,
+                "c1": None,
+                "c2": None,
+                "c3": None,
+                "c4": None,
+                "d":  None,
+            },
+            pert={
+                "a1a3": cls.convert_pert(
+                    KBOBeco_object.get("Primärenergie"),
+                    declared_factor
+                ),
+                "a4": None,
+                "a5": None,
+                "b1": None,
+                "b2": None,
+                "b3": None,
+                "b4": None,
+                "b5": None,
+                "b6": None,
+                "b7": None,
+                "c1": None,
+                "c2": None,
+                "c3": None,
+                "c4": None,
+                "d":  None,
+            },
             gwp={
                 "a1a3": cls.convert_gwp(
                     KBOBeco_object.get("Treibhausgasemissionen (kg CO2-eq)"),
@@ -57,35 +116,61 @@ class EPDx(EPD):
         return epd
 
 
-    @staticmethod
-    def convert_unit(unit: str) -> Unit:
-        match unit:
-            case "STK":
-                return Unit.PCS
-            case "m":
-                return Unit.M
-            case "m2":
-                return Unit.M2
-            case "m3":
-                return Unit.M3
-            case "kg":
-                return Unit.KG
-            case "l":
-                return Unit.L
-            case _:
-                return Unit.UNKNOWN
-
 
     @staticmethod
     def convert_gwp(gwp: str, declared_factor: float) -> float | None:
-        return None if gwp in ["-", ""] else float(gwp) / declared_factor
-    
+        try:
+            return float(gwp) / declared_factor if gwp and gwp not in ["-", ""] else None
+        except ValueError:
+            return None
+
+    @staticmethod
+    def convert_pert(pert: str, declared_factor: float) -> float | None:
+        try:
+            return float(pert) / declared_factor if pert and pert not in ["-", ""] else None
+        except ValueError:
+            return None
+
+
+    @staticmethod
+    def convert_penre(penre: str, declared_factor: float) -> float | None:
+        try:
+            return float(penre) / declared_factor if penre and penre not in ["-", ""] else None
+        except ValueError:
+            return None
+
+    @staticmethod
+    def convert_pere(pere: str, declared_factor: float) -> float | None:
+        try:
+            return float(pere) / declared_factor if pere and pere not in ["-", ""] else None
+        except ValueError:
+            return None
+
+    @staticmethod
+    def convert_unit(unit: str) -> Unit:
+        if unit == "STK":
+            return Unit.PCS
+        elif unit == "m":
+            return Unit.M
+        elif unit == "m2":
+            return Unit.M2
+        elif unit == "m3":
+            return Unit.M3
+        elif unit == "kg":
+            return Unit.KG
+        elif unit == "l":
+            return Unit.L
+        else:
+            return Unit.UNKNOWN
+
+
 
 def main(path: Path, out_path: Path):
-    reader = csv.DictReader(io.StringIO(path.read_text()))
+    with path.open('r', encoding='utf-8-sig') as file:  # Handle potential BOM
+        reader = csv.DictReader(file, delimiter=',')  # Specify the correct delimiter if not a comma
+        for row in reader:
+            parse_row(row, out_path)
 
-    for row in reader:
-        parse_row(row, out_path)
 
 
 def parse_row(row: dict, out_path: Path):
