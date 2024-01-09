@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Fondations profondes, colonnes ballastées",
-  "conversions": null,
+  "comment": "UBP Total: 30800, UBP Manufacturing: 30800, UBP Disposal: 0, Total PE: 30, Total Manufacturing PE: 30, Energy Utilized Manufacturing PE: 30, Material Utilized Manufacturing PE: 0, Disposal PE: 0, Total Renewable PE: 2, Total Renewable Manufacturing PE: 2, Energy Utilized Renewable Manufacturing PE: 2, Material Utilized Renewable Manufacturing PE: 0, Renewable Disposal PE: 0, Total Non-renewable PE: 29, Total Non-renewable Manufacturing PE: 29, Energy Utilized Non-renewable Manufacturing PE: 29, Material Utilized Non-renewable Manufacturing PE: 0, Non-renewable Disposal PE: 0, GWP Total: 7, GWP Disposal: 7, GWP Manufacturing: 0, Biogenic Carbon: 0",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 0.0
+    }
+  ],
   "cru": null,
   "declared_unit": "M",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 7.0,
+    "a1a3": 0.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 7.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -34,7 +39,7 @@
   "mer": null,
   "meta_data": null,
   "mrf": null,
-  "name": "Tiefgründung, Rüttelstopfsäule",
+  "name": "Tiefgruendung, Ruettelstopfsaeule",
   "nhwd": null,
   "nrsf": null,
   "odp": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Béton dur, 2 couches, 35 mm",
-  "conversions": null,
+  "comment": "UBP Total: 27200, UBP Manufacturing: 24100, UBP Disposal: 3120, Total PE: 44, Total Manufacturing PE: 40, Energy Utilized Manufacturing PE: 40, Material Utilized Manufacturing PE: 0, Disposal PE: 4, Total Renewable PE: 2, Total Renewable Manufacturing PE: 2, Energy Utilized Renewable Manufacturing PE: 2, Material Utilized Renewable Manufacturing PE: 0, Renewable Disposal PE: 0, Total Non-renewable PE: 42, Total Non-renewable Manufacturing PE: 38, Energy Utilized Non-renewable Manufacturing PE: 38, Material Utilized Non-renewable Manufacturing PE: 0, Non-renewable Disposal PE: 4, GWP Total: 16.4, GWP Disposal: 15.4, GWP Manufacturing: 0.932, Biogenic Carbon: 0",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 73.5
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 16.4,
+    "a1a3": 0.932,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 15.4,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -39,7 +44,7 @@
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 42.0,
+    "a1a3": 38.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 4.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Xylolithe, vitrifié, 16.5 mm",
-  "conversions": null,
+  "comment": "UBP Total: 16400, UBP Manufacturing: 15400, UBP Disposal: 934, Total PE: 26.1, Total Manufacturing PE: 25, Energy Utilized Manufacturing PE: 25, Material Utilized Manufacturing PE: 0, Disposal PE: 1, Total Renewable PE: 1, Total Renewable Manufacturing PE: 1, Energy Utilized Renewable Manufacturing PE: 1, Material Utilized Renewable Manufacturing PE: 0, Renewable Disposal PE: 0, Total Non-renewable PE: 25.1, Total Non-renewable Manufacturing PE: 24, Energy Utilized Non-renewable Manufacturing PE: 24, Material Utilized Non-renewable Manufacturing PE: 0, Non-renewable Disposal PE: 1, GWP Total: 12.9, GWP Disposal: 12.7, GWP Manufacturing: 0.279, Biogenic Carbon: 0",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 22.0
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 12.9,
+    "a1a3": 0.279,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 12.7,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -39,7 +44,7 @@
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 25.1,
+    "a1a3": 24.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 1.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

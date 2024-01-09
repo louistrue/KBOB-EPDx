@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Cadre de fenêtre en bois",
-  "conversions": null,
+  "comment": "UBP Total: 77700, UBP Manufacturing: 70600, UBP Disposal: 7120, Total PE: 362, Total Manufacturing PE: 360, Energy Utilized Manufacturing PE: 264, Material Utilized Manufacturing PE: 96, Disposal PE: 2, Total Renewable PE: 190, Total Renewable Manufacturing PE: 190, Energy Utilized Renewable Manufacturing PE: 104, Material Utilized Renewable Manufacturing PE: 86, Renewable Disposal PE: 0, Total Non-renewable PE: 172, Total Non-renewable Manufacturing PE: 170, Energy Utilized Non-renewable Manufacturing PE: 160, Material Utilized Non-renewable Manufacturing PE: 10, Non-renewable Disposal PE: 2, GWP Total: 36, GWP Disposal: 30, GWP Manufacturing: 5.9, Biogenic Carbon: 8",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 0.0
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 36.0,
+    "a1a3": 5.9,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 30.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -39,7 +44,7 @@
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 172.0,
+    "a1a3": 170.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 2.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

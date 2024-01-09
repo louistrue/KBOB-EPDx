@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Isolation en lin, MAGRIPOL, Premium",
-  "conversions": null,
+  "comment": "UBP Total: 2880, UBP Manufacturing: 2510, UBP Disposal: 370, Total PE: 11.1, Total Manufacturing PE: 11, Energy Utilized Manufacturing PE: 6, Material Utilized Manufacturing PE: 5, Disposal PE: 0, Total Renewable PE: 5.9, Total Renewable Manufacturing PE: 6, Energy Utilized Renewable Manufacturing PE: 1, Material Utilized Renewable Manufacturing PE: 5, Renewable Disposal PE: 0, Total Non-renewable PE: 5.2, Total Non-renewable Manufacturing PE: 5, Energy Utilized Non-renewable Manufacturing PE: 5, Material Utilized Non-renewable Manufacturing PE: 0, Non-renewable Disposal PE: 0, GWP Total: 0.98, GWP Disposal: 0.75, GWP Manufacturing: 0.235, Biogenic Carbon: 0.44",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 30.0
+    }
+  ],
   "cru": null,
   "declared_unit": "KG",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 0.98,
+    "a1a3": 0.235,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.75,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -39,7 +44,7 @@
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 5.2,
+    "a1a3": 5.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -58,7 +63,7 @@
   "penrm": null,
   "penrt": null,
   "pere": {
-    "a1a3": 5.9,
+    "a1a3": 6.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

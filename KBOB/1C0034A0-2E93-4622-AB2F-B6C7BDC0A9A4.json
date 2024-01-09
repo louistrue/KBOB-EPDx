@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Blindage de fouille, paroi parisienne, étayé",
-  "conversions": null,
+  "comment": "UBP Total: 1300000, UBP Manufacturing: 1140000, UBP Disposal: 167000, Total PE: 2250, Total Manufacturing PE: 1990, Energy Utilized Manufacturing PE: 1990, Material Utilized Manufacturing PE: 0, Disposal PE: 257, Total Renewable PE: 129, Total Renewable Manufacturing PE: 120, Energy Utilized Renewable Manufacturing PE: 120, Material Utilized Renewable Manufacturing PE: 0, Renewable Disposal PE: 9, Total Non-renewable PE: 2120, Total Non-renewable Manufacturing PE: 1870, Energy Utilized Non-renewable Manufacturing PE: 1870, Material Utilized Non-renewable Manufacturing PE: 0, Non-renewable Disposal PE: 248, GWP Total: 861, GWP Disposal: 801, GWP Manufacturing: 61, Biogenic Carbon: 0",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 0.0
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 861.0,
+    "a1a3": 61.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 801.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -39,7 +44,7 @@
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 2120.0,
+    "a1a3": 1870.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 248.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -58,7 +63,7 @@
   "penrm": null,
   "penrt": null,
   "pere": {
-    "a1a3": 129.0,
+    "a1a3": 120.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 9.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

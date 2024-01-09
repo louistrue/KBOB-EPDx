@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Plan de travail en matériau composite (base: hydroxyde d'aluminium)",
-  "conversions": null,
+  "comment": "UBP Total: 137000, UBP Manufacturing: 116000, UBP Disposal: 20800, Total PE: 361, Total Manufacturing PE: 356, Energy Utilized Manufacturing PE: 303, Material Utilized Manufacturing PE: 53, Disposal PE: 5, Total Renewable PE: 6, Total Renewable Manufacturing PE: 6, Energy Utilized Renewable Manufacturing PE: 6, Material Utilized Renewable Manufacturing PE: 0, Renewable Disposal PE: 0, Total Non-renewable PE: 355, Total Non-renewable Manufacturing PE: 350, Energy Utilized Non-renewable Manufacturing PE: 297, Material Utilized Non-renewable Manufacturing PE: 53, Non-renewable Disposal PE: 4, GWP Total: 95.5, GWP Disposal: 76.2, GWP Manufacturing: 19.2, Biogenic Carbon: 0",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 0.0
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 95.5,
+    "a1a3": 19.2,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 76.2,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -39,7 +44,7 @@
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 355.0,
+    "a1a3": 350.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 4.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

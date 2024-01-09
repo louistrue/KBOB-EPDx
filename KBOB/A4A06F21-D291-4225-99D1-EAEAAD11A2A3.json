@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Cadre de fenêtre en aluminium, WICLINE 75evo, fabriqué avec Hydro CIRCAL 75R 2",
-  "conversions": null,
+  "comment": "UBP Total: 177000, UBP Manufacturing: 171000, UBP Disposal: 6240, Total PE: 247, Total Manufacturing PE: 247, Energy Utilized Manufacturing PE: 247, Material Utilized Manufacturing PE: 0, Disposal PE: 0, Total Renewable PE: 53.9, Total Renewable Manufacturing PE: 54, Energy Utilized Renewable Manufacturing PE: 54, Material Utilized Renewable Manufacturing PE: 0, Renewable Disposal PE: 0, Total Non-renewable PE: 193, Total Non-renewable Manufacturing PE: 193, Energy Utilized Non-renewable Manufacturing PE: 193, Material Utilized Non-renewable Manufacturing PE: 0, Non-renewable Disposal PE: 0.5, GWP Total: 55.6, GWP Disposal: 49.6, GWP Manufacturing: 5.98, Biogenic Carbon: 0",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 0.0
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 55.6,
+    "a1a3": 5.98,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 49.6,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.5,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -58,7 +63,7 @@
   "penrm": null,
   "penrt": null,
   "pere": {
-    "a1a3": 53.9,
+    "a1a3": 54.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

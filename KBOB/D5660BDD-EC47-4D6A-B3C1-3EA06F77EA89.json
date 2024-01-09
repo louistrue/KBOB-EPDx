@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Revêtement coulé à 2 comp., industrie (résine époxy), 2,25 mm",
-  "conversions": null,
+  "comment": "UBP Total: 41700, UBP Manufacturing: 33500, UBP Disposal: 8240, Total PE: 67, Total Manufacturing PE: 64, Energy Utilized Manufacturing PE: 55, Material Utilized Manufacturing PE: 9, Disposal PE: 2, Total Renewable PE: 2, Total Renewable Manufacturing PE: 1, Energy Utilized Renewable Manufacturing PE: 1, Material Utilized Renewable Manufacturing PE: 0, Renewable Disposal PE: 0, Total Non-renewable PE: 65, Total Non-renewable Manufacturing PE: 63, Energy Utilized Non-renewable Manufacturing PE: 54, Material Utilized Non-renewable Manufacturing PE: 9, Non-renewable Disposal PE: 2, GWP Total: 18.4, GWP Disposal: 11.1, GWP Manufacturing: 7.24, Biogenic Carbon: 0",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 4.55
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 18.4,
+    "a1a3": 7.24,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 11.1,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -39,7 +44,7 @@
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 65.0,
+    "a1a3": 63.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 2.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -58,7 +63,7 @@
   "penrm": null,
   "penrt": null,
   "pere": {
-    "a1a3": 2.0,
+    "a1a3": 1.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

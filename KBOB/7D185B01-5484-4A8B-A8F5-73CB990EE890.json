@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Double vitrage, verre VSG, U<1.1 W/m2K 3",
-  "conversions": null,
+  "comment": "UBP Total: 128000, UBP Manufacturing: 119000, UBP Disposal: 8730, Total PE: 345, Total Manufacturing PE: 341, Energy Utilized Manufacturing PE: 341, Material Utilized Manufacturing PE: 0, Disposal PE: 5, Total Renewable PE: 21, Total Renewable Manufacturing PE: 21, Energy Utilized Renewable Manufacturing PE: 21, Material Utilized Renewable Manufacturing PE: 0, Renewable Disposal PE: 0, Total Non-renewable PE: 324, Total Non-renewable Manufacturing PE: 320, Energy Utilized Non-renewable Manufacturing PE: 320, Material Utilized Non-renewable Manufacturing PE: 0, Non-renewable Disposal PE: 4, GWP Total: 79.3, GWP Disposal: 72.6, GWP Manufacturing: 6.68, Biogenic Carbon: 0",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 0.0
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 79.3,
+    "a1a3": 6.68,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 72.6,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -39,7 +44,7 @@
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 324.0,
+    "a1a3": 320.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 4.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

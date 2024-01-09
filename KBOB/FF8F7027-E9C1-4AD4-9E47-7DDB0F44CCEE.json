@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Plan de travail en bois massif",
-  "conversions": null,
+  "comment": "UBP Total: 27400, UBP Manufacturing: 26000, UBP Disposal: 1480, Total PE: 396, Total Manufacturing PE: 394, Energy Utilized Manufacturing PE: 256, Material Utilized Manufacturing PE: 138, Disposal PE: 2, Total Renewable PE: 335, Total Renewable Manufacturing PE: 335, Energy Utilized Renewable Manufacturing PE: 206, Material Utilized Renewable Manufacturing PE: 129, Renewable Disposal PE: 0, Total Non-renewable PE: 61, Total Non-renewable Manufacturing PE: 59, Energy Utilized Non-renewable Manufacturing PE: 50, Material Utilized Non-renewable Manufacturing PE: 9, Non-renewable Disposal PE: 2, GWP Total: 12.6, GWP Disposal: 11.7, GWP Manufacturing: 0.92, Biogenic Carbon: 6",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 0.0
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 12.6,
+    "a1a3": 0.92,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 11.7,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -39,7 +44,7 @@
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 61.0,
+    "a1a3": 59.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 2.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

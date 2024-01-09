@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Caoutchouc, 2 mm",
-  "conversions": null,
+  "comment": "UBP Total: 24200, UBP Manufacturing: 20400, UBP Disposal: 3750, Total PE: 71, Total Manufacturing PE: 70, Energy Utilized Manufacturing PE: 62, Material Utilized Manufacturing PE: 7, Disposal PE: 1, Total Renewable PE: 10, Total Renewable Manufacturing PE: 10, Energy Utilized Renewable Manufacturing PE: 10, Material Utilized Renewable Manufacturing PE: 0, Renewable Disposal PE: 0, Total Non-renewable PE: 61, Total Non-renewable Manufacturing PE: 60, Energy Utilized Non-renewable Manufacturing PE: 53, Material Utilized Non-renewable Manufacturing PE: 7, Non-renewable Disposal PE: 1, GWP Total: 14.1, GWP Disposal: 11, GWP Manufacturing: 3.19, Biogenic Carbon: 0",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 3.36
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 14.1,
+    "a1a3": 3.19,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 11.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -39,7 +44,7 @@
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 61.0,
+    "a1a3": 60.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 1.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

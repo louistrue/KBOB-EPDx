@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Plan de travail en acier chromé, standard",
-  "conversions": null,
+  "comment": "UBP Total: 137000, UBP Manufacturing: 136000, UBP Disposal: 1420, Total PE: 313, Total Manufacturing PE: 312, Energy Utilized Manufacturing PE: 257, Material Utilized Manufacturing PE: 54, Disposal PE: 2, Total Renewable PE: 89, Total Renewable Manufacturing PE: 89, Energy Utilized Renewable Manufacturing PE: 45, Material Utilized Renewable Manufacturing PE: 44, Renewable Disposal PE: 0, Total Non-renewable PE: 224, Total Non-renewable Manufacturing PE: 223, Energy Utilized Non-renewable Manufacturing PE: 212, Material Utilized Non-renewable Manufacturing PE: 11, Non-renewable Disposal PE: 1, GWP Total: 56.8, GWP Disposal: 55.7, GWP Manufacturing: 1.05, Biogenic Carbon: 5",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 0.0
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 56.8,
+    "a1a3": 1.05,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 55.7,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -39,7 +44,7 @@
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 224.0,
+    "a1a3": 223.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 1.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

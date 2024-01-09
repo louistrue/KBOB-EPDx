@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Dalle en pierre naturelle polie, 15 mm",
-  "conversions": null,
+  "comment": "UBP Total: 69600, UBP Manufacturing: 67900, UBP Disposal: 1720, Total PE: 168, Total Manufacturing PE: 166, Energy Utilized Manufacturing PE: 166, Material Utilized Manufacturing PE: 0, Disposal PE: 2, Total Renewable PE: 25, Total Renewable Manufacturing PE: 25, Energy Utilized Renewable Manufacturing PE: 25, Material Utilized Renewable Manufacturing PE: 0, Renewable Disposal PE: 0, Total Non-renewable PE: 144, Total Non-renewable Manufacturing PE: 142, Energy Utilized Non-renewable Manufacturing PE: 142, Material Utilized Non-renewable Manufacturing PE: 0, Non-renewable Disposal PE: 2, GWP Total: 19.6, GWP Disposal: 19.1, GWP Manufacturing: 0.514, Biogenic Carbon: 0",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 40.5
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 19.6,
+    "a1a3": 0.514,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 19.1,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -39,7 +44,7 @@
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 144.0,
+    "a1a3": 142.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 2.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

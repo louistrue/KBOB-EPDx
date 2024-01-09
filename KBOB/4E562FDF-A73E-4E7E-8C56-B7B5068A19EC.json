@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Blindage de fouille, paroi berlinoise, fixe",
-  "conversions": null,
+  "comment": "UBP Total: 319000, UBP Manufacturing: 292000, UBP Disposal: 26400, Total PE: 686, Total Manufacturing PE: 646, Energy Utilized Manufacturing PE: 646, Material Utilized Manufacturing PE: 0, Disposal PE: 40, Total Renewable PE: 45, Total Renewable Manufacturing PE: 44, Energy Utilized Renewable Manufacturing PE: 44, Material Utilized Renewable Manufacturing PE: 0, Renewable Disposal PE: 1, Total Non-renewable PE: 641, Total Non-renewable Manufacturing PE: 602, Energy Utilized Non-renewable Manufacturing PE: 602, Material Utilized Non-renewable Manufacturing PE: 0, Non-renewable Disposal PE: 39, GWP Total: 197, GWP Disposal: 187, GWP Manufacturing: 10, Biogenic Carbon: 0",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 0.0
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 197.0,
+    "a1a3": 10.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 187.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -34,12 +39,12 @@
   "mer": null,
   "meta_data": null,
   "mrf": null,
-  "name": "Baugrubensicherung, Rühlwand, verankert",
+  "name": "Baugrubensicherung, Ruehlwand, verankert",
   "nhwd": null,
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 641.0,
+    "a1a3": 602.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 39.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -58,7 +63,7 @@
   "penrm": null,
   "penrt": null,
   "pere": {
-    "a1a3": 45.0,
+    "a1a3": 44.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 1.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

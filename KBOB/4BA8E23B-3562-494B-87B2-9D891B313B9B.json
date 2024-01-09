@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Panneau de façade, plastique à renfort de verre (PRV), 1,6 mm",
-  "conversions": null,
+  "comment": "UBP Total: 31700, UBP Manufacturing: 25700, UBP Disposal: 6000, Total PE: 79, Total Manufacturing PE: 78, Energy Utilized Manufacturing PE: 69, Material Utilized Manufacturing PE: 9, Disposal PE: 1, Total Renewable PE: 4, Total Renewable Manufacturing PE: 4, Energy Utilized Renewable Manufacturing PE: 4, Material Utilized Renewable Manufacturing PE: 0, Renewable Disposal PE: 0, Total Non-renewable PE: 75, Total Non-renewable Manufacturing PE: 75, Energy Utilized Non-renewable Manufacturing PE: 66, Material Utilized Non-renewable Manufacturing PE: 9, Non-renewable Disposal PE: 1, GWP Total: 22, GWP Disposal: 17, GWP Manufacturing: 6, Biogenic Carbon: 0",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 2.4
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 22.0,
+    "a1a3": 6.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 17.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -34,7 +39,7 @@
   "mer": null,
   "meta_data": null,
   "mrf": null,
-  "name": "Fassadenplatte, Kunststoff glasfaserverstärkt (GFK), 1.6 mm",
+  "name": "Fassadenplatte, Kunststoff glasfaserverstaerkt (GFK), 1.6 mm",
   "nhwd": null,
   "nrsf": null,
   "odp": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 1.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Portes extérieures bois, doublées alu ",
-  "conversions": null,
+  "comment": "UBP Total: 231000, UBP Manufacturing: 222000, UBP Disposal: 9270, Total PE: 833, Total Manufacturing PE: 829, Energy Utilized Manufacturing PE: 622, Material Utilized Manufacturing PE: 207, Disposal PE: 4, Total Renewable PE: 328, Total Renewable Manufacturing PE: 328, Energy Utilized Renewable Manufacturing PE: 147, Material Utilized Renewable Manufacturing PE: 181, Renewable Disposal PE: 0, Total Non-renewable PE: 505, Total Non-renewable Manufacturing PE: 501, Energy Utilized Non-renewable Manufacturing PE: 475, Material Utilized Non-renewable Manufacturing PE: 26, Non-renewable Disposal PE: 4, GWP Total: 116, GWP Disposal: 108, GWP Manufacturing: 7.64, Biogenic Carbon: 16",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 0.0
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 116.0,
+    "a1a3": 7.64,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 108.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -34,12 +39,12 @@
   "mer": null,
   "meta_data": null,
   "mrf": null,
-  "name": "Aussentüre, Holz, aluminiumbeplankt",
+  "name": "Aussentuere, Holz, aluminiumbeplankt",
   "nhwd": null,
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 505.0,
+    "a1a3": 501.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 4.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

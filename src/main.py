@@ -17,24 +17,90 @@ class EPDx(EPD):
         declared_unit = KBOBeco_object.get("Bezug")
         french_name = KBOBeco_object.get("MATERIAUX")
         biogen_c = KBOBeco_object.get("Biogener Kohlenstoff")
+        id_nummer = KBOBeco_object.get("ID-Nummer")
+        uuid_nummer = KBOBeco_object.get("UUID-Nummer")
+        gruppe = KBOBeco_object.get("Gruppe")
+        baumaterialien = KBOBeco_object.get("BAUMATERIALIEN")
+        id_nummer_entsorgung = KBOBeco_object.get("ID-Nummer Entsorgung") # Adjust the key if necessary
+        entsorgung = KBOBeco_object.get("Entsorgung")
+        dichte_masse = KBOBeco_object.get("Dichte/Masse")
+        bezug = KBOBeco_object.get("Bezug")
+        ubp_total = KBOBeco_object.get("UBP Total")
+        ubp_herstellung = KBOBeco_object.get("UBP Herstellung")
+        ubp_entsorgung = KBOBeco_object.get("UBP Entsorgung")
+        pe_gesamt_total = KBOBeco_object.get("PE gesamt, Total")
+        pe_herstellung_total = KBOBeco_object.get("PE gesamt, Herstellung total")
+        pe_herstellung_energetisch_genutzt = KBOBeco_object.get("PE gesamt, Herstellung energetisch genutzt")
+        pe_herstellung_stofflich_genutzt = KBOBeco_object.get("PE gesamt, Herstellung stofflich genutzt")
+        pe_entsorgung = KBOBeco_object.get("PE gesamt, Entsorgung")
+        pe_erneuerbar_total = KBOBeco_object.get("PE erneuerbar, Total")
+        pe_erneuerbar_herstellung_total = KBOBeco_object.get("PE erneuerbar, Herstellung total")
+        pe_erneuerbar_herstellung_energetisch_genutzt = KBOBeco_object.get("PE erneuerbar, Herstellung energetisch genutzt")
+        pe_erneuerbar_herstellung_stofflich_genutzt = KBOBeco_object.get("PE erneuerbar, Herstellung stofflich genutzt")
+        pe_erneuerbar_entsorgung = KBOBeco_object.get("PE erneuerbar, Entsorgung")
+        pe_nicht_erneuerbar_total = KBOBeco_object.get("PE nicht erneuerbar, Total")
+        pe_nicht_erneuerbar_herstellung_total = KBOBeco_object.get("PE nicht erneuerbar, Herstellung total")
+        pe_nicht_erneuerbar_herstellung_energetisch_genutzt = KBOBeco_object.get("PE nicht erneuerbar, Herstellung energetisch genutzt")
+        pe_nicht_erneuerbar_herstellung_stofflich_genutzt = KBOBeco_object.get("PE nicht erneuerbar, Herstellung stofflich genutzt")
+        pe_nicht_erneuerbar_entsorgung = KBOBeco_object.get("PE nicht erneuerbar, Entsorgung")
+        gwp_total = KBOBeco_object.get("GWP Total")
+        gwp_entsorgung = KBOBeco_object.get("GWP Entsorgung")
+        gwp_herstellung = KBOBeco_object.get("GWP Herstellung")
+        biogener_kohlenstoff = KBOBeco_object.get("Biogener Kohlenstoff")
+        french_name = KBOBeco_object.get("French Name")
+
+
+        # Initialize a default conversion dictionary
+        conversion_value = {"to": Unit.KG, "value": 0.0, "error": "Not per kg"}
+
+        # Check if dichte_masse is a valid float and not a dash ('-')
+        if dichte_masse.replace('.', '', 1).isdigit() and dichte_masse != "-":
+            conversion_value = {"to": Unit.KG, "value": float(dichte_masse) * declared_factor, "error": None}
+
+        conversions = [conversion_value]
+
 
         epd = cls(
             id=KBOBeco_object.get("UUID-Nummer") or str(uuid.uuid4()),
             format_version=importlib.metadata.version("epdx"),
-            name=KBOBeco_object.get("BAUMATERIALIEN"),
-                        version="version 4 - 2024",
+            name=baumaterialien,
+            version="V4 - 2024",
             declared_unit=cls.convert_unit(declared_unit),
             valid_until=datetime(year=2025, month=12, day=22),
             published_date=datetime(year=2024, month=11, day=25),
             source=Source(name="KBOB", url="https://www.kbob.admin.ch/kbob/de/home/themen-leistungen/nachhaltiges-bauen/oekobilanzdaten_baubereich.html"),
             standard=Standard.EN15804A2,
             subtype="Generic",
-            comment=str(french_name),
+            comment = (
+                f"UBP Total: {ubp_total}, "
+                f"UBP Manufacturing: {ubp_herstellung}, "
+                f"UBP Disposal: {ubp_entsorgung}, "
+                f"Total PE: {pe_gesamt_total}, "
+                f"Total Manufacturing PE: {pe_herstellung_total}, "
+                f"Energy Utilized Manufacturing PE: {pe_herstellung_energetisch_genutzt}, "
+                f"Material Utilized Manufacturing PE: {pe_herstellung_stofflich_genutzt}, "
+                f"Disposal PE: {pe_entsorgung}, "
+                f"Total Renewable PE: {pe_erneuerbar_total}, "
+                f"Total Renewable Manufacturing PE: {pe_erneuerbar_herstellung_total}, "
+                f"Energy Utilized Renewable Manufacturing PE: {pe_erneuerbar_herstellung_energetisch_genutzt}, "
+                f"Material Utilized Renewable Manufacturing PE: {pe_erneuerbar_herstellung_stofflich_genutzt}, "
+                f"Renewable Disposal PE: {pe_erneuerbar_entsorgung}, "
+                f"Total Non-renewable PE: {pe_nicht_erneuerbar_total}, "
+                f"Total Non-renewable Manufacturing PE: {pe_nicht_erneuerbar_herstellung_total}, "
+                f"Energy Utilized Non-renewable Manufacturing PE: {pe_nicht_erneuerbar_herstellung_energetisch_genutzt}, "
+                f"Material Utilized Non-renewable Manufacturing PE: {pe_nicht_erneuerbar_herstellung_stofflich_genutzt}, "
+                f"Non-renewable Disposal PE: {pe_nicht_erneuerbar_entsorgung}, "
+                f"GWP Total: {gwp_total}, "
+                f"GWP Disposal: {gwp_entsorgung}, "
+                f"GWP Manufacturing: {gwp_herstellung}, "
+                f"Biogenic Carbon: {biogener_kohlenstoff}"
+            ),
             reference_service_life=60,
             location="CH",
+            conversions = [conversion_value],
             penre={
                 "a1a3": cls.convert_penre(
-                    KBOBeco_object.get("Primärenergie nicht erneuerbar (kWh oil-eq)"),
+                    KBOBeco_object.get("PE nicht erneuerbar, Herstellung total"),
                     declared_factor
                 ),
                 "a4": None,
@@ -46,7 +112,10 @@ class EPDx(EPD):
                 "b5": None,
                 "b6": None,
                 "b7": None,
-                "c1": None,
+                "c1": cls.convert_penre(
+                    KBOBeco_object.get("PE nicht erneuerbar, Entsorgung"),
+                    declared_factor
+                ),
                 "c2": None,
                 "c3": None,
                 "c4": None,
@@ -54,7 +123,7 @@ class EPDx(EPD):
             },
             pere={
                 "a1a3": cls.convert_pere(
-                    KBOBeco_object.get("Primärenergie erneuerbar (kWh oil-eq)"),
+                    KBOBeco_object.get("PE erneuerbar, Herstellung total"),
                     declared_factor
                 ),
                 "a4": None,
@@ -66,7 +135,10 @@ class EPDx(EPD):
                 "b5": None,
                 "b6": None,
                 "b7": None,
-                "c1": None,
+                "c1": cls.convert_penre(
+                    KBOBeco_object.get("PE erneuerbar, Entsorgung"),
+                    declared_factor
+                ),
                 "c2": None,
                 "c3": None,
                 "c4": None,
@@ -74,7 +146,7 @@ class EPDx(EPD):
             },
             pert={
                 "a1a3": cls.convert_pert(
-                    KBOBeco_object.get("Primärenergie"),
+                    KBOBeco_object.get("PE gesamt, Total"),
                     declared_factor
                 ),
                 "a4": None,
@@ -94,7 +166,7 @@ class EPDx(EPD):
             },
             gwp={
                 "a1a3": cls.convert_gwp(
-                    KBOBeco_object.get("Treibhausgasemissionen (kg CO2-eq)"),
+                    KBOBeco_object.get("GWP Herstellung"),
                     declared_factor
                 ),
                 "a4": None,
@@ -106,7 +178,10 @@ class EPDx(EPD):
                 "b5": None,
                 "b6": None,
                 "b7": None,
-                "c1": None,
+                "c1": cls.convert_penre(
+                    KBOBeco_object.get("GWP Entsorgung"),
+                    declared_factor
+                ),
                 "c2": None,
                 "c3": None,
                 "c4": None,
@@ -179,6 +254,6 @@ def parse_row(row: dict, out_path: Path):
 
 
 if __name__ == "__main__":
-    p = Path("C:\\Users\\LouisTrümpler\\Documents\\GitHub\\KBOB_EPDx\\src\\KBOB.csv")
+    p = Path("C:\\Users\\LouisTrümpler\\Documents\\GitHub\\KBOB_EPDx\\src\\Oekobilanzdaten_ Baubereich_Donne_ecobilans_construction_2009-1-2022_v4_0_clean.csv")
     out = Path(__file__).parent.parent / "KBOB"
     main(p, out)

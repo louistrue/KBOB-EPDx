@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Élargissement du cadre, PVC",
-  "conversions": null,
+  "comment": "UBP Total: 99700, UBP Manufacturing: 66500, UBP Disposal: 33300, Total PE: 348, Total Manufacturing PE: 335, Energy Utilized Manufacturing PE: 239, Material Utilized Manufacturing PE: 96, Disposal PE: 14, Total Renewable PE: 41.8, Total Renewable Manufacturing PE: 41, Energy Utilized Renewable Manufacturing PE: 33, Material Utilized Renewable Manufacturing PE: 8, Renewable Disposal PE: 1, Total Non-renewable PE: 306, Total Non-renewable Manufacturing PE: 294, Energy Utilized Non-renewable Manufacturing PE: 206, Material Utilized Non-renewable Manufacturing PE: 88, Non-renewable Disposal PE: 13, GWP Total: 69.7, GWP Disposal: 39.5, GWP Manufacturing: 30.1, Biogenic Carbon: 1",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 15.0
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 69.7,
+    "a1a3": 30.1,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 39.5,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -39,7 +44,7 @@
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 306.0,
+    "a1a3": 294.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 13.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -58,7 +63,7 @@
   "penrm": null,
   "penrt": null,
   "pere": {
-    "a1a3": 41.8,
+    "a1a3": 41.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 1.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

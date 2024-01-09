@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Parquet en liège, huilé et vitrifié, 5,3 mm ",
-  "conversions": null,
+  "comment": "UBP Total: 5960, UBP Manufacturing: 3830, UBP Disposal: 2130, Total PE: 24.4, Total Manufacturing PE: 23, Energy Utilized Manufacturing PE: 16, Material Utilized Manufacturing PE: 7, Disposal PE: 1, Total Renewable PE: 12.3, Total Renewable Manufacturing PE: 12, Energy Utilized Renewable Manufacturing PE: 5, Material Utilized Renewable Manufacturing PE: 7, Renewable Disposal PE: 0, Total Non-renewable PE: 12.1, Total Non-renewable Manufacturing PE: 11, Energy Utilized Non-renewable Manufacturing PE: 11, Material Utilized Non-renewable Manufacturing PE: 0, Non-renewable Disposal PE: 1, GWP Total: 3.26, GWP Disposal: 1.96, GWP Manufacturing: 1.3, Biogenic Carbon: 1",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 2.7
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 3.26,
+    "a1a3": 1.3,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 1.96,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -34,12 +39,12 @@
   "mer": null,
   "meta_data": null,
   "mrf": null,
-  "name": "Korkparkett geölt/versiegelt, 5.3 mm",
+  "name": "Korkparkett geoelt/versiegelt, 5.3 mm",
   "nhwd": null,
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 12.1,
+    "a1a3": 11.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 1.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -58,7 +63,7 @@
   "penrm": null,
   "penrt": null,
   "pere": {
-    "a1a3": 12.3,
+    "a1a3": 12.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

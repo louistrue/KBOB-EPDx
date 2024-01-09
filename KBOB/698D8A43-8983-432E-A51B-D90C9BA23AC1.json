@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Bois massif hêtre, chêne, séché en cellule, brut, production Suisse",
-  "conversions": null,
+  "comment": "UBP Total: 355, UBP Manufacturing: 292, UBP Disposal: 63, Total PE: 7.7, Total Manufacturing PE: 8, Energy Utilized Manufacturing PE: 3, Material Utilized Manufacturing PE: 5, Disposal PE: 0, Total Renewable PE: 7.2, Total Renewable Manufacturing PE: 7, Energy Utilized Renewable Manufacturing PE: 2, Material Utilized Renewable Manufacturing PE: 5, Renewable Disposal PE: 0, Total Non-renewable PE: 0.5, Total Non-renewable Manufacturing PE: 0, Energy Utilized Non-renewable Manufacturing PE: 0, Material Utilized Non-renewable Manufacturing PE: 0, Non-renewable Disposal PE: 0, GWP Total: 0.11, GWP Disposal: 0.07, GWP Manufacturing: 0.04, Biogenic Carbon: 0.45",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 675.0
+    }
+  ],
   "cru": null,
   "declared_unit": "KG",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 0.11,
+    "a1a3": 0.04,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.07,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -39,7 +44,7 @@
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 0.5,
+    "a1a3": 0.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -58,7 +63,7 @@
   "penrm": null,
   "penrt": null,
   "pere": {
-    "a1a3": 7.2,
+    "a1a3": 7.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

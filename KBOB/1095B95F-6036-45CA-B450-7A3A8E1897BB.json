@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Bois lamellé-collé",
-  "conversions": null,
+  "comment": "UBP Total: 769, UBP Manufacturing: 695, UBP Disposal: 73.8, Total PE: 9.7, Total Manufacturing PE: 10, Energy Utilized Manufacturing PE: 4, Material Utilized Manufacturing PE: 5, Disposal PE: 0, Total Renewable PE: 8.1, Total Renewable Manufacturing PE: 8, Energy Utilized Renewable Manufacturing PE: 3, Material Utilized Renewable Manufacturing PE: 5, Renewable Disposal PE: 0, Total Non-renewable PE: 1.53, Total Non-renewable Manufacturing PE: 1, Energy Utilized Non-renewable Manufacturing PE: 1, Material Utilized Non-renewable Manufacturing PE: 0, Non-renewable Disposal PE: 0, GWP Total: 0.335, GWP Disposal: 0.285, GWP Manufacturing: 0.049, Biogenic Carbon: 0.446",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 439.0
+    }
+  ],
   "cru": null,
   "declared_unit": "KG",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 0.335,
+    "a1a3": 0.049,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.285,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -39,7 +44,7 @@
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 1.53,
+    "a1a3": 1.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -58,7 +63,7 @@
   "penrm": null,
   "penrt": null,
   "pere": {
-    "a1a3": 8.1,
+    "a1a3": 8.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

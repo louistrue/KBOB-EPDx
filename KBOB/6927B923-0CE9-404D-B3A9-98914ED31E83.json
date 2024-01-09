@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Cuisine, métal, 16 éléments",
-  "conversions": null,
+  "comment": "UBP Total: 6610000, UBP Manufacturing: 6550000, UBP Disposal: 54300, Total PE: 10900, Total Manufacturing PE: 10900, Energy Utilized Manufacturing PE: 10900, Material Utilized Manufacturing PE: 67, Disposal PE: 5, Total Renewable PE: 682, Total Renewable Manufacturing PE: 682, Energy Utilized Renewable Manufacturing PE: 615, Material Utilized Renewable Manufacturing PE: 67, Renewable Disposal PE: 0, Total Non-renewable PE: 10300, Total Non-renewable Manufacturing PE: 10200, Energy Utilized Non-renewable Manufacturing PE: 10200, Material Utilized Non-renewable Manufacturing PE: 0, Non-renewable Disposal PE: 5, GWP Total: 2770, GWP Disposal: 2720, GWP Manufacturing: 51, Biogenic Carbon: 3",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 0.0
+    }
+  ],
   "cru": null,
   "declared_unit": "UNKNOWN",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 2770.0,
+    "a1a3": 51.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 2720.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -34,12 +39,12 @@
   "mer": null,
   "meta_data": null,
   "mrf": null,
-  "name": "Küche, Metall, 16-teilig",
+  "name": "Kueche, Metall, 16-teilig",
   "nhwd": null,
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 10300.0,
+    "a1a3": 10200.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 5.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

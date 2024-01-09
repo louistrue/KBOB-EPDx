@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Porte intérieure, porte de chambre, bois, vitrage, cadre en bois",
-  "conversions": null,
+  "comment": "UBP Total: 109000, UBP Manufacturing: 99800, UBP Disposal: 8880, Total PE: 455, Total Manufacturing PE: 449, Energy Utilized Manufacturing PE: 307, Material Utilized Manufacturing PE: 142, Disposal PE: 6, Total Renewable PE: 200, Total Renewable Manufacturing PE: 200, Energy Utilized Renewable Manufacturing PE: 73, Material Utilized Renewable Manufacturing PE: 127, Renewable Disposal PE: 0, Total Non-renewable PE: 255, Total Non-renewable Manufacturing PE: 249, Energy Utilized Non-renewable Manufacturing PE: 234, Material Utilized Non-renewable Manufacturing PE: 15, Non-renewable Disposal PE: 5, GWP Total: 59.7, GWP Disposal: 52.8, GWP Manufacturing: 6.92, Biogenic Carbon: 11",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 0.0
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 59.7,
+    "a1a3": 6.92,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 52.8,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -34,12 +39,12 @@
   "mer": null,
   "meta_data": null,
   "mrf": null,
-  "name": "Innentüre, Zimmertüre, Holz, Glaseinsatz, Holzrahmen",
+  "name": "Innentuere, Zimmertuere, Holz, Glaseinsatz, Holzrahmen",
   "nhwd": null,
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 255.0,
+    "a1a3": 249.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 5.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

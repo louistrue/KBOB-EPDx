@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Cuisine, bois reconstitué, 16 éléments",
-  "conversions": null,
+  "comment": "UBP Total: 1200000, UBP Manufacturing: 1110000, UBP Disposal: 91000, Total PE: 5400, Total Manufacturing PE: 5340, Energy Utilized Manufacturing PE: 2880, Material Utilized Manufacturing PE: 2460, Disposal PE: 60, Total Renewable PE: 2530, Total Renewable Manufacturing PE: 2520, Energy Utilized Renewable Manufacturing PE: 599, Material Utilized Renewable Manufacturing PE: 1930, Renewable Disposal PE: 3, Total Non-renewable PE: 2870, Total Non-renewable Manufacturing PE: 2810, Energy Utilized Non-renewable Manufacturing PE: 2280, Material Utilized Non-renewable Manufacturing PE: 531, Non-renewable Disposal PE: 56, GWP Total: 632, GWP Disposal: 557, GWP Manufacturing: 74.8, Biogenic Carbon: 223",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 0.0
+    }
+  ],
   "cru": null,
   "declared_unit": "UNKNOWN",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 632.0,
+    "a1a3": 74.8,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 557.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -34,12 +39,12 @@
   "mer": null,
   "meta_data": null,
   "mrf": null,
-  "name": "Küche, Spanplatte, 16-teilig",
+  "name": "Kueche, Spanplatte, 16-teilig",
   "nhwd": null,
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 2870.0,
+    "a1a3": 2810.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 56.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -58,7 +63,7 @@
   "penrm": null,
   "penrt": null,
   "pere": {
-    "a1a3": 2530.0,
+    "a1a3": 2520.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 3.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

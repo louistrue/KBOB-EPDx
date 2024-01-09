@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Parquet, 2 plis, vitrifié d'usine, 11 mm",
-  "conversions": null,
+  "comment": "UBP Total: 16100, UBP Manufacturing: 15600, UBP Disposal: 490, Total PE: 130, Total Manufacturing PE: 129, Energy Utilized Manufacturing PE: 99, Material Utilized Manufacturing PE: 30, Disposal PE: 1, Total Renewable PE: 88, Total Renewable Manufacturing PE: 88, Energy Utilized Renewable Manufacturing PE: 58, Material Utilized Renewable Manufacturing PE: 29, Renewable Disposal PE: 0, Total Non-renewable PE: 42, Total Non-renewable Manufacturing PE: 42, Energy Utilized Non-renewable Manufacturing PE: 41, Material Utilized Non-renewable Manufacturing PE: 1, Non-renewable Disposal PE: 1, GWP Total: 7.8, GWP Disposal: 7.46, GWP Manufacturing: 0.34, Biogenic Carbon: 3",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 6.1
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 7.8,
+    "a1a3": 0.34,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 7.46,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 1.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

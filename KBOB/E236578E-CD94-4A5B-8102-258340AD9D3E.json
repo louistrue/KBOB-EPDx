@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Protection solaire, stores à projection avec moteur 4",
-  "conversions": null,
+  "comment": "UBP Total: 150000, UBP Manufacturing: 148000, UBP Disposal: 2110, Total PE: 318, Total Manufacturing PE: 318, Energy Utilized Manufacturing PE: 314, Material Utilized Manufacturing PE: 4, Disposal PE: 1, Total Renewable PE: 35, Total Renewable Manufacturing PE: 35, Energy Utilized Renewable Manufacturing PE: 35, Material Utilized Renewable Manufacturing PE: 0, Renewable Disposal PE: 0, Total Non-renewable PE: 283, Total Non-renewable Manufacturing PE: 282, Energy Utilized Non-renewable Manufacturing PE: 278, Material Utilized Non-renewable Manufacturing PE: 4, Non-renewable Disposal PE: 1, GWP Total: 68, GWP Disposal: 66, GWP Manufacturing: 2, Biogenic Carbon: 0",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 0.0
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 68.0,
+    "a1a3": 2.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 66.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -39,7 +44,7 @@
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 283.0,
+    "a1a3": 282.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 1.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }

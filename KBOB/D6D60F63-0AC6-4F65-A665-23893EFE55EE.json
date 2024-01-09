@@ -2,8 +2,13 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "Triple vitrage, verre ESG/ESG, U<0.6 W/m2K 3",
-  "conversions": null,
+  "comment": "UBP Total: 143000, UBP Manufacturing: 135000, UBP Disposal: 7680, Total PE: 386, Total Manufacturing PE: 381, Energy Utilized Manufacturing PE: 381, Material Utilized Manufacturing PE: 0, Disposal PE: 4, Total Renewable PE: 33, Total Renewable Manufacturing PE: 32, Energy Utilized Renewable Manufacturing PE: 32, Material Utilized Renewable Manufacturing PE: 0, Renewable Disposal PE: 0, Total Non-renewable PE: 353, Total Non-renewable Manufacturing PE: 349, Energy Utilized Non-renewable Manufacturing PE: 349, Material Utilized Non-renewable Manufacturing PE: 0, Non-renewable Disposal PE: 4, GWP Total: 83.3, GWP Disposal: 77.6, GWP Manufacturing: 5.7, Biogenic Carbon: 0",
+  "conversions": [
+    {
+      "to": "KG",
+      "value": 0.0
+    }
+  ],
   "cru": null,
   "declared_unit": "M2",
   "eee": null,
@@ -12,7 +17,7 @@
   "format_version": "0.3.0",
   "fw": null,
   "gwp": {
-    "a1a3": 83.3,
+    "a1a3": 5.7,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -22,7 +27,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 77.6,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -39,7 +44,7 @@
   "nrsf": null,
   "odp": null,
   "penre": {
-    "a1a3": 353.0,
+    "a1a3": 349.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -49,7 +54,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 4.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -58,7 +63,7 @@
   "penrm": null,
   "penrt": null,
   "pere": {
-    "a1a3": 33.0,
+    "a1a3": 32.0,
     "a4": null,
     "a5": null,
     "b1": null,
@@ -68,7 +73,7 @@
     "b5": null,
     "b6": null,
     "b7": null,
-    "c1": null,
+    "c1": 0.0,
     "c2": null,
     "c3": null,
     "c4": null,
@@ -105,5 +110,5 @@
   "standard": "EN15804A2",
   "subtype": "Generic",
   "valid_until": "2025-12-22T00:00:00",
-  "version": "version 4 - 2024"
+  "version": "V4 - 2024"
 }
