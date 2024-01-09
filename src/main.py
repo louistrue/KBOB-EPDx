@@ -16,7 +16,6 @@ class EPDx(EPD):
         declared_factor = 1
         declared_unit = KBOBeco_object.get("Bezug")
         french_name = KBOBeco_object.get("MATERIAUX")
-        biogen_c = KBOBeco_object.get("Biogener Kohlenstoff")
         id_nummer = KBOBeco_object.get("ID-Nummer")
         uuid_nummer = KBOBeco_object.get("UUID-Nummer")
         gruppe = KBOBeco_object.get("Gruppe")
@@ -72,6 +71,8 @@ class EPDx(EPD):
             standard=Standard.EN15804A2,
             subtype="Generic",
             comment = (
+                f"ID-Nummer: {id_nummer}, "
+                f"Material Group: {gruppe}, "
                 f"UBP Total: {ubp_total}, "
                 f"UBP Manufacturing: {ubp_herstellung}, "
                 f"UBP Disposal: {ubp_entsorgung}, "

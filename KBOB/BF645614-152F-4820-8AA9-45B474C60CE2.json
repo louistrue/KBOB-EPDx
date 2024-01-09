@@ -2,7 +2,7 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "UBP Total: 11900, UBP Manufacturing: 7890, UBP Disposal: 4060, Total PE: 43, Total Manufacturing PE: 42, Energy Utilized Manufacturing PE: 32, Material Utilized Manufacturing PE: 10, Disposal PE: 2, Total Renewable PE: 8, Total Renewable Manufacturing PE: 8, Energy Utilized Renewable Manufacturing PE: 3, Material Utilized Renewable Manufacturing PE: 6, Renewable Disposal PE: 0, Total Non-renewable PE: 35, Total Non-renewable Manufacturing PE: 33, Energy Utilized Non-renewable Manufacturing PE: 29, Material Utilized Non-renewable Manufacturing PE: 4, Non-renewable Disposal PE: 1, GWP Total: 8.28, GWP Disposal: 4.75, GWP Manufacturing: 3.52, Biogenic Carbon: 1",
+  "comment": "ID-Nummer: 11.01, Material Group: Bodenbelaege, UBP Total: 11900, UBP Manufacturing: 7890, UBP Disposal: 4060, Total PE: 43, Total Manufacturing PE: 42, Energy Utilized Manufacturing PE: 32, Material Utilized Manufacturing PE: 10, Disposal PE: 2, Total Renewable PE: 8, Total Renewable Manufacturing PE: 8, Energy Utilized Renewable Manufacturing PE: 3, Material Utilized Renewable Manufacturing PE: 6, Renewable Disposal PE: 0, Total Non-renewable PE: 35, Total Non-renewable Manufacturing PE: 33, Energy Utilized Non-renewable Manufacturing PE: 29, Material Utilized Non-renewable Manufacturing PE: 4, Non-renewable Disposal PE: 1, GWP Total: 8.28, GWP Disposal: 4.75, GWP Manufacturing: 3.52, Biogenic Carbon: 1",
   "conversions": [
     {
       "to": "KG",

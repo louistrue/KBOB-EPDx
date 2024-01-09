@@ -2,7 +2,7 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "UBP Total: 1230000, UBP Manufacturing: 1070000, UBP Disposal: 167000, Total PE: 2050, Total Manufacturing PE: 1800, Energy Utilized Manufacturing PE: 1800, Material Utilized Manufacturing PE: 0, Disposal PE: 257, Total Renewable PE: 114, Total Renewable Manufacturing PE: 105, Energy Utilized Renewable Manufacturing PE: 105, Material Utilized Renewable Manufacturing PE: 0, Renewable Disposal PE: 9, Total Non-renewable PE: 1940, Total Non-renewable Manufacturing PE: 1690, Energy Utilized Non-renewable Manufacturing PE: 1690, Material Utilized Non-renewable Manufacturing PE: 0, Non-renewable Disposal PE: 248, GWP Total: 821, GWP Disposal: 761, GWP Manufacturing: 61, Biogenic Carbon: 0",
+  "comment": "ID-Nummer: 00.002, Material Group: Vorbereitungsarbeiten, UBP Total: 1230000, UBP Manufacturing: 1070000, UBP Disposal: 167000, Total PE: 2050, Total Manufacturing PE: 1800, Energy Utilized Manufacturing PE: 1800, Material Utilized Manufacturing PE: 0, Disposal PE: 257, Total Renewable PE: 114, Total Renewable Manufacturing PE: 105, Energy Utilized Renewable Manufacturing PE: 105, Material Utilized Renewable Manufacturing PE: 0, Renewable Disposal PE: 9, Total Non-renewable PE: 1940, Total Non-renewable Manufacturing PE: 1690, Energy Utilized Non-renewable Manufacturing PE: 1690, Material Utilized Non-renewable Manufacturing PE: 0, Non-renewable Disposal PE: 248, GWP Total: 821, GWP Disposal: 761, GWP Manufacturing: 61, Biogenic Carbon: 0",
   "conversions": [
     {
       "to": "KG",

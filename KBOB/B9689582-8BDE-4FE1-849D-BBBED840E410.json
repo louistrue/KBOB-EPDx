@@ -2,7 +2,7 @@
   "adpe": null,
   "adpf": null,
   "ap": null,
-  "comment": "UBP Total: 1400, UBP Manufacturing: 1170, UBP Disposal: 227, Total PE: 10.5, Total Manufacturing PE: 10, Energy Utilized Manufacturing PE: 5, Material Utilized Manufacturing PE: 6, Disposal PE: 0, Total Renewable PE: 7.1, Total Renewable Manufacturing PE: 7, Energy Utilized Renewable Manufacturing PE: 2, Material Utilized Renewable Manufacturing PE: 5, Renewable Disposal PE: 0, Total Non-renewable PE: 3.4, Total Non-renewable Manufacturing PE: 3, Energy Utilized Non-renewable Manufacturing PE: 3, Material Utilized Non-renewable Manufacturing PE: 1, Non-renewable Disposal PE: 0, GWP Total: 0.725, GWP Disposal: 0.633, GWP Manufacturing: 0.0921, Biogenic Carbon: 0.436",
+  "comment": "ID-Nummer: 10.009, Material Group: Waermedaemmstoffe, UBP Total: 1400, UBP Manufacturing: 1170, UBP Disposal: 227, Total PE: 10.5, Total Manufacturing PE: 10, Energy Utilized Manufacturing PE: 5, Material Utilized Manufacturing PE: 6, Disposal PE: 0, Total Renewable PE: 7.1, Total Renewable Manufacturing PE: 7, Energy Utilized Renewable Manufacturing PE: 2, Material Utilized Renewable Manufacturing PE: 5, Renewable Disposal PE: 0, Total Non-renewable PE: 3.4, Total Non-renewable Manufacturing PE: 3, Energy Utilized Non-renewable Manufacturing PE: 3, Material Utilized Non-renewable Manufacturing PE: 1, Non-renewable Disposal PE: 0, GWP Total: 0.725, GWP Disposal: 0.633, GWP Manufacturing: 0.0921, Biogenic Carbon: 0.436",
   "conversions": [
     {
       "to": "KG",
