@@ -20,7 +20,7 @@ class EPDx(EPD):
         uuid_nummer = KBOBeco_object.get("UUID-Nummer")
         gruppe = KBOBeco_object.get("Gruppe")
         baumaterialien = KBOBeco_object.get("BAUMATERIALIEN")
-        id_nummer_entsorgung = KBOBeco_object.get("ID-Nummer Entsorgung") # Adjust the key if necessary
+        id_nummer_entsorgung = KBOBeco_object.get("ID-Nummer Entsorgung")
         entsorgung = KBOBeco_object.get("Entsorgung")
         dichte_masse = KBOBeco_object.get("Dichte/Masse")
         bezug = KBOBeco_object.get("Bezug")
@@ -70,32 +70,33 @@ class EPDx(EPD):
             source=Source(name="KBOB", url="https://www.kbob.admin.ch/kbob/de/home/themen-leistungen/nachhaltiges-bauen/oekobilanzdaten_baubereich.html"),
             standard=Standard.EN15804A2,
             subtype="Generic",
-            comment = (
-                f"ID-Nummer: {id_nummer}, "
-                f"Material Group: {gruppe}, "
-                f"UBP Total: {ubp_total}, "
-                f"UBP Manufacturing: {ubp_herstellung}, "
-                f"UBP Disposal: {ubp_entsorgung}, "
-                f"Total PE: {pe_gesamt_total}, "
-                f"Total Manufacturing PE: {pe_herstellung_total}, "
-                f"Energy Utilized Manufacturing PE: {pe_herstellung_energetisch_genutzt}, "
-                f"Material Utilized Manufacturing PE: {pe_herstellung_stofflich_genutzt}, "
-                f"Disposal PE: {pe_entsorgung}, "
-                f"Total Renewable PE: {pe_erneuerbar_total}, "
-                f"Total Renewable Manufacturing PE: {pe_erneuerbar_herstellung_total}, "
-                f"Energy Utilized Renewable Manufacturing PE: {pe_erneuerbar_herstellung_energetisch_genutzt}, "
-                f"Material Utilized Renewable Manufacturing PE: {pe_erneuerbar_herstellung_stofflich_genutzt}, "
-                f"Renewable Disposal PE: {pe_erneuerbar_entsorgung}, "
-                f"Total Non-renewable PE: {pe_nicht_erneuerbar_total}, "
-                f"Total Non-renewable Manufacturing PE: {pe_nicht_erneuerbar_herstellung_total}, "
-                f"Energy Utilized Non-renewable Manufacturing PE: {pe_nicht_erneuerbar_herstellung_energetisch_genutzt}, "
-                f"Material Utilized Non-renewable Manufacturing PE: {pe_nicht_erneuerbar_herstellung_stofflich_genutzt}, "
-                f"Non-renewable Disposal PE: {pe_nicht_erneuerbar_entsorgung}, "
-                f"GWP Total: {gwp_total}, "
-                f"GWP Disposal: {gwp_entsorgung}, "
-                f"GWP Manufacturing: {gwp_herstellung}, "
-                f"Biogenic Carbon: {biogener_kohlenstoff}"
-            ),
+            comment = f'{id_nummer}/{baumaterialien}',
+            meta_data = {
+                "ID-Nummer": id_nummer,
+                "Material Group": gruppe,
+                "UBP Total": ubp_total,
+                "UBP Manufacturing": ubp_herstellung,
+                "UBP Disposal": ubp_entsorgung,
+                "Total PE": pe_gesamt_total,
+                "Total Manufacturing PE": pe_herstellung_total,
+                "Energy Utilized Manufacturing PE": pe_herstellung_energetisch_genutzt,
+                "Material Utilized Manufacturing PE": pe_herstellung_stofflich_genutzt,
+                "Disposal PE": pe_entsorgung,
+                "Total Renewable PE": pe_erneuerbar_total,
+                "Total Renewable Manufacturing PE": pe_erneuerbar_herstellung_total,
+                "Energy Utilized Renewable Manufacturing PE": pe_erneuerbar_herstellung_energetisch_genutzt,
+                "Material Utilized Renewable Manufacturing PE": pe_erneuerbar_herstellung_stofflich_genutzt,
+                "Renewable Disposal PE": pe_erneuerbar_entsorgung,
+                "Total Non-renewable PE": pe_nicht_erneuerbar_total,
+                "Total Non-renewable Manufacturing PE": pe_nicht_erneuerbar_herstellung_total,
+                "Energy Utilized Non-renewable Manufacturing PE": pe_nicht_erneuerbar_herstellung_energetisch_genutzt,
+                "Material Utilized Non-renewable Manufacturing PE": pe_nicht_erneuerbar_herstellung_stofflich_genutzt,
+                "Non-renewable Disposal PE": pe_nicht_erneuerbar_entsorgung,
+                "GWP Total": gwp_total,
+                "GWP Disposal": gwp_entsorgung,
+                "GWP Manufacturing": gwp_herstellung,
+                "Biogenic Carbon": biogener_kohlenstoff
+            },
             reference_service_life=60,
             location="CH",
             conversions = [conversion_value],
@@ -251,7 +252,10 @@ def main(path: Path, out_path: Path):
 
 def parse_row(row: dict, out_path: Path):
     epd = EPDx.from_dict(row)
-    (out_path / f"{epd.id}.json").write_text(epd.json(ensure_ascii=False, indent=2))
+    (out_path / f"{epd.id}.json").write_text(epd.json())
+
+#help(EPD)
+#print(dir(EPD))
 
 
 if __name__ == "__main__":
